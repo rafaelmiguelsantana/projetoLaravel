@@ -1,0 +1,25 @@
+----INSTALANDO O PHP----
+baixar o php
+descompactar em uma pasta na raiz
+
+incluir o path das variáveis globais para que reconheça o php em qualquer diretório
+incluir: c:\php-7.4.6 e testar o php --version no prompt
+
+--laravel
+
+instalar a partir do site laravel.com
+configurar o composer para reconher os pacotes para o laravel
+composer config -g repo.packagist composer https://packagist.org
+
+instalar o reconhecimento, via github, dos protocolos ssh e https
+composer config -g github-protocols https ssh
+
+CRIANDO UM PROJETO LARAVEL
+composer create-project --prefer-dist laravel/laravel projeto_laravel_via_composesr "7.0" (se informar o 
+"7.0" vai criar um projeto nessa versão do laravel, se não informar vai criar na última versão
+
+INICIANDO O PROJETO
+acessar a pasta PUBLIC dentro da pasta do projeto que foi criado o laravel
+digitar: php -S localhost:8080
+
+
