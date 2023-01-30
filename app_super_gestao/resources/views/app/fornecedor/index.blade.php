@@ -7,3 +7,13 @@ você está em fornecedores
     //blocos terá php puro
 
 @endphp
+
+{{--@dd($fornecedores);--}}
+
+@if(count($fornecedores) > 0 && count($fornecedores) < 10)
+    <h3>Existem alguns fornecedores cadastrados</h3>
+@elseif(count($fornecedores) > 10)
+    <h3>Existem vários fornecedores cadastrados</h3> <!-- oiiii -->
+@else
+    <h3>Ainda não existem fornecedores cadastrados</h3>
+@endif  
